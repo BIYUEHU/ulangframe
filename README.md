@@ -10,7 +10,7 @@
 
 **ULANG**以**MinecraftBE**Addon(附加包)的Script Engine(脚本引擎)为基础,在其官方给的已有API中进行扩展开发。
 
-<img src="./images/ulang_icon.png" alt="ulang" style="zoom: 200%;" />
+<img src="./ulangbe/ulang_icon.png" alt="ulang" style="zoom: 200%;" />
 
 ### ScriptEngine
 即**脚本引擎**,首次加入在MinecraftBEbeta1.8.0.3中。在其刚加入时部分开发者或玩家就已抱有期望；

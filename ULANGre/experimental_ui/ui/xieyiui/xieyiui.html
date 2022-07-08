@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<script src="../../UIEngine.js"></script>
+	<script src="../../scripts/script1.js"></script>
+<link rel="stylesheet" href="../../styles/styles2.css" />
+</head>
+
+<body>  
+  <div class="div_zhuti">
+    <div class="div_beijing_wai" style="width:750px;margin-top:30vh;">  <!-- 宽度 900大  500中 300小-->
+      <div class='div_ziti_red' style="text-align:center;">ddon协议（210508）</div>
+      <div id="close" class="close-button">x</div>
+      <div class="div_beijing_nei">
+      <img src='../../imgs/air1.png' width=10px height=10px></img>
+      <p class='div_ziti_red'>本协议专门为@BIYUEHU制作的Addon（Pymod/SEmod等基于Addon的也算在内）的使用协议</p>
+      <img src='../../imgs/air1.png' width=10px height=5px></img>
+      <p class='div_ziti_red'>1.本Addon禁止任何人转载与二次发布到任意地方，除非有我亲自的特殊授权(一般人都不会给);</p>
+      <p class='div_ziti_red'>2.此Addon仅可能在MCBBS,MCPEDL,中国版上发布，其余平台看到的都是假的，请举报;</p>
+      <p class='div_ziti_red'>3.如若要使用此Addon录制视频等，请务必在明显的地方标注作者名字(如置顶评论/视频</p>
+      <p class='div_ziti_red'>开头/视频简介等);</p>
+      <p class='div_ziti_red'>4.如若需使用本Addon装载至服务器则必须由我亲自同意，且必须在明显地方标注作者名字（服务器公告等）；</p>
+      <p class='div_ziti_red'>5.使用本Addon即代表你遵守协议，否则别用；</p>
+      <p class='div_ziti_red'>6.如若不愿遵守以上协议，请注意您的个人隐私安全；</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+ let scriptEngineHandle = null;
+engine.on("facet:updated:core.scripting", function (scriptEngine) {
+  scriptEngineHandle = scriptEngine;
+  });
+  engine.trigger("facet:request", ["core.scripting"]);
+
+  let close = document.getElementById("close");
+  close.addEventListener("click", function () {
+  scriptEngineHandle.triggerEvent("xieyiui_close_xieyiui");
+  });
+</script>
+</html>

@@ -1,0 +1,87 @@
+// 介绍UI
+{
+	"namespace": "tabbed_upsell",
+
+	"esbe_panel": {
+		"type": "stack_panel",
+		"offset": [4,4],
+		"controls": [
+			{
+				"prof":{
+					"type": "stack_panel",
+					"orientation": "horizontal",
+					"size": ["100%",132],
+					"controls": [
+						{"img": {"type": "image","texture": "pack_icon","size": [ 128, 128 ]}},
+						{"sp": {"type":"panel","size":[4,4]}},
+						{
+							"p":{
+								"type": "stack_panel",
+								"controls":[
+									{"1": {"type": "label","font_type": "smooth","text": "中文名字：ULANG框架"}},
+{"2": {"type": "label","font_type": "smooth","text": "英文名字：ULANGFrame"}},
+{"3": {"type": "label","font_type": "smooth","text": "前置：MinecraftBE"}},
+{"4": {"type": "label","font_type": "smooth","text": "版本：beta V0.1.0"}},
+{"5": {"type": "label","font_type": "smooth","text": "支持游戏版本：1.17.X"}},									
+{"6": {"type": "label","font_scale_factor": 1.3,"text": "作者博客：https://biyuehu.github.io"}},
+{"7": {"type": "label","font_scale_factor": 0.9,"text": "\n\n"}},
+{"8": {"type": "label","font_scale_factor": 0.9,"text": "付费群:历史作品与最新作品的beta内测版均会第一时间发布于此,包括BEic2,BEgc,IceAge,BEtic等系列作品"}},
+{"9": {"type": "label","font_scale_factor": 0.9,"text": "加群费用仅需10.0RMB"}},
+{"10": {"type": "label","font_scale_factor": 0.9,"text": "支付请加收费员QQ1980067595"}},
+{"11": {"type": "label","font_scale_factor": 0.9,"text": "支持QQ和微信支付"}},
+{"12": {"type": "label","font_scale_factor": 0.9,"text": "\n\n"}},
+{"13": {"type": "label","font_scale_factor": 1.5,"text": "§4Addon协议（210508）："}},
+{"14": {"type": "label","font_scale_factor": 0.9,"text": "§4本协议专门为@BIYUEHU制作的Addon（Pymod/SEmod等基于Addon的也算在内）的使用协议"}},
+{"15": {"type": "label","font_scale_factor": 0.9,"text": "§41.本Addon禁止任何人转载与二次发布到任意地方，除非有我亲自的特殊授权（一般人都不会给）；"}},
+{"16": {"type": "label","font_scale_factor": 0.9,"text": "§42.此Addon仅可能在MCBBS,MCPEDL,中国版上发布，其余平台看到的都是假的，请举报；"}},
+{"17": {"type": "label","font_scale_factor": 0.9,"text": "§43.如若要使用此Addon录制视频等，请务必在明显的地方标注作者名字（如置顶评论/视频开头/视频简介等）；"}},
+{"18": {"type": "label","font_scale_factor": 0.9,"text": "§44.如若需使用本Addon装载至服务器则必须由我亲自同意，且必须在明显地方标注作者名字（服务器公告等）；"}},
+{"19": {"type": "label","font_scale_factor": 0.9,"text": "§45.使用本Addon即代表你遵守协议，否则别用；"}},
+{"20": {"type": "label","font_scale_factor": 0.9,"text": "§46.如若不愿遵守以上协议，请注意您的安全"}}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"changes":{
+					"type": "stack_panel",
+					"orientation": "horizontal",
+					"size": ["100%",128],
+					"controls": [
+						{
+							"h":{
+								"type": "stack_panel",
+								"size": [132,"100%"],
+								"controls": [
+									{"nam": {"type": "label","font_scale_factor": 1.5,"text": "§6ULANG"}},
+									{"ch": {"type": "label","font_scale_factor": 1.2,"text": "§bBY 碧月狐DADA"}}
+								]
+							}
+						}
+						// {
+						// 	"p":{
+						// 		"type": "stack_panel",
+						// 		"controls": [
+																
+						// 		]
+						// 	}
+						// }
+					]
+				}
+			}
+		]
+	},
+
+	"scroll@common.scrolling_panel": {
+		"$show_background": false,
+		"$scrolling_content": "tabbed_upsell.esbe_panel"
+	},
+
+	"tabbed_upseel_screen_panel@common_dialogs.main_panel_no_buttons": {
+		"size": ["80%" ,"80%" ],
+		"$text_name": "§6ULANG",
+		"$child_control": "tabbed_upsell.scroll"
+	}
+}

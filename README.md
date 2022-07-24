@@ -1,6 +1,6 @@
 # ULANGFrame
 
-[ULANGFrame文档](https://huliapi.xyz:86/ulangdoc)
+[ULANGFrame文档](https://iamlolicon.work/doc/ulangdoc)
 
 [ULANGAddon-betaV0.1.0](https://github.com/BIYUEHU/ulangframe/releases/tag/ulang)
 
